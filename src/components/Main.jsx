@@ -29,8 +29,8 @@ const Main = () => {
     }
 
   return (
-    <Box bgColor={'teal.900'} h={'80vh'} px={16} py={16}>
-      <Container centerContent w="full">
+    <Box h={'80vh'} px={16} py={16}>
+      <Container centerContent w="full" position={'relative'} zinde>
         <HStack>
           <Input
             type="text"
@@ -47,7 +47,7 @@ const Main = () => {
           />
         </HStack>
 
-        <VStack h='200px' m={'16'} justifyContent={'space-evenly'} color={'white'} fontWeight={'bold'} fontSize={'20px'}>
+        <VStack h='200px' m={'16'} zIndex={10} justifyContent={'space-evenly'} color={'white'} fontWeight={'bold'} fontSize={'xl'} fontFamily={['Archivo Narrow', 'sans-serif']} textAlign={'center'}>
             {typeof weather.main !== 'undefined' ? (
                 <>
                 <Text > {weather.name}</Text>

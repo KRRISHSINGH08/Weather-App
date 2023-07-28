@@ -10,7 +10,6 @@ export const ColorModeSwitcher = props => {
     <IconButton
       variant="outline"
       color="white"
-      bgColor={"blackAlpha.900"}
       pos={"absolute"}
       top={4}
       right={4}
