@@ -30,7 +30,7 @@ const Main = () => {
 
   return (
     <Box h={'80vh'} px={16} py={16}>
-      <Container centerContent w="full" position={'relative'} zinde>
+      <Container centerContent w="full" position={'relative'}>
         <HStack>
           <Input
             type="text"
@@ -50,6 +50,7 @@ const Main = () => {
         <VStack h='200px' m={'16'} zIndex={10} justifyContent={'space-evenly'} color={'white'} fontWeight={'bold'} fontSize={'xl'} fontFamily={['Archivo Narrow', 'sans-serif']} textAlign={'center'}>
             {typeof weather.main !== 'undefined' ? (
                 <>
+                <img alt='weather' src={`icons/${weather.weather[0].icon}.png`} />
                 <Text > {weather.name}</Text>
                 <Text> {weather.main.temp}°C</Text>
                 <Text> {weather.weather[0].main}</Text>
