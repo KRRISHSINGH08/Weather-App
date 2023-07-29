@@ -10,7 +10,7 @@ const Header = () => {
           w={"100vw"}
           h={"100vh"}
           src={btcSrc} />
-    <HStack h={'20vh'} font-family={['Bree Serif', 'serif']}> 
+    <HStack h={'20vh'} fontFamily={['Bree Serif', 'serif']}> 
       <Heading color={'white'} zIndex={'10'} w='full' textAlign={'center'} > Weather App</Heading>
     </HStack>
     </Box>

@@ -10,7 +10,7 @@ const Footer = () => {
     bgColor={'blackAlpha.900'}
     color={'whiteAlpha.700'}
     minH={40}
-    px="16"
+    px={['0', '16']}
     py={["16", "8"]}
     >
   <Stack 
@@ -28,7 +28,7 @@ const Footer = () => {
         </Link>
       </VStack>
 
-      <VStack >
+      <VStack w='full'>
         <Avatar boxSize={"16"} mt={["4", "0"]} src={AvatarSrc}> </Avatar>
         <Text>KRRISHSINGH08</Text>
       </VStack>

@@ -29,8 +29,8 @@ const Main = () => {
     }
 
   return (
-    <Box h={'80vh'} px={16} py={16}>
-      <Container centerContent w="full" position={'relative'}>
+    <Box h={'80vh'}  py={16}>
+      <Container centerContent w="full" position={'relative'} >
         <HStack>
           <Input
             type="text"
@@ -39,7 +39,7 @@ const Main = () => {
             _placeholder={{ color: 'black' }}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <IconButton
+          <IconButton 
             aria-label="Search database"
             colorScheme="blackAlpha"
             icon={<Search2Icon />}
@@ -47,7 +47,7 @@ const Main = () => {
           />
         </HStack>
 
-        <VStack h='200px' m={'16'} zIndex={10} justifyContent={'space-evenly'} color={'white'} fontWeight={'bold'} fontSize={'xl'} fontFamily={['Archivo Narrow', 'sans-serif']} textAlign={'center'}>
+        <VStack h='200px' m={'16'} zIndex={10} justifyContent={'space-evenly'} color={'white'} fontWeight={'bold'} fontSize={['md','xl']} fontFamily={['Archivo Narrow', 'sans-serif']} textAlign={'center'}>
             {typeof weather.main !== 'undefined' ? (
                 <>
                 <img alt='weather' src={`icons/${weather.weather[0].icon}.png`} />
