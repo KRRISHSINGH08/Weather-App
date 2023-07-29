@@ -28,7 +28,7 @@ const Footer = () => {
         </Link>
       </VStack>
 
-      <VStack border={'2px solid red'} >
+      <VStack >
         <Avatar boxSize={"16"} mt={["4", "0"]} src={AvatarSrc}> </Avatar>
         <Text>KRRISHSINGH08</Text>
       </VStack>
